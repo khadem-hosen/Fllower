@@ -1,0 +1,45 @@
+body{
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    -moz-transition-property: all;
+
+
+    -webkit-animation: 'my' 5s;
+    -o-animation: 'my' 5s;
+    -moz-animation: 'my' 5s;
+}
+
+
+@-webkit-keyframes my{
+
+    0%{
+        opacity: 0.1;
+    }
+
+      10%{
+        opacity: 0.2;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

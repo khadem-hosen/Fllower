@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سفارش روز</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!--<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>-->
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
+
+
+
+
+
+
+
+<style>
+@font-face{font-family:'Vazir-Medium-FD-WOL';
+src:url('fon/farsi/Vazir-Medium-FD-WOL.eot');
+src: url('fon/farsi/Vazir-Medium-FD-WOL.ttf');
+src: url('fon/farsi/Vazir-Medium-FD-WOL.woff');}
+
+.sefar:hover{border: 1px solid red; }
+.br:hover{border: 1px solid black;
+-webkit-transform: scale(1.03,1.03);
+-moz-transform: scale(1.03,1.03);
+-o-transform: scale(1.03,1.03);
+-webkit-transition-duration:0.5s;
+-moz-transition-duration:0.5;
+-o-transition-duration: 0.5s;}
+
+.sayeh:hover{box-shadow:0px 0px 10px 10px rgb(227, 189, 189) ;
+-webkit-transform: scale(1.01,1.01);
+-moz-transform: scale(1.01,1.01);
+-o-transform: scale(1.01,1.01);
+}
+
+.mar{margin-top:10px ;}
+
+a{text-decoration: none;}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body  style="font-family:Vazir-Medium-FD-WOL;" >
+<a name="↑"></a>
+
+<div class="container-fluid">
+
+
+<!-------------------------------menu-------------------------------------->
+<nav class="navbar navbar-expand-xxl navbar-dark  fixed-top" style="background-color: rgb(245, 177, 175);">
+<div class="container-fluid">
+
+<!-------------sabad kharid---------------------------------------------------->
+<a class="navbar-brand  " href="sabad.html"  style="background-image: url(img/sabad.png);
+width: 80px;height: 50px;
+background-size:50px 50px;
+background-repeat: no-repeat;padding-top: 0%;text-align: right;">  
+<span class="badge  rounded-circle " style="font-size:18px ;background-color: #ff0000;color: rgb(255, 255, 255);
+margin-right: 10px;" >0</span>
+</a>
+<a href="login.html"  class="navbar-brand   rounded-pill" target="_blank">ورود/ثبت نام</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse  dropstart   " id="collapsibleNavbar" style="direction:rtl ;">
+
+
+
+
+<ul class="nav nav-pills" style=" border-bottom: 1px solid rgb(251, 206, 206);">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" style="color:black;">گلنار</a>
+<ul class="dropdown-menu dar" style="text-align: right;background-color: rgb(255, 255, 255);">
+<li  style="width:1000px;"><a class="dropdown-item" href="about.html" style="border-bottom:1px solid rgb(224, 210, 210) ;">درباره ما</a></li>
+<li><a class="dropdown-item" href="#">معرفی گل آراها</a></li>
+<li><a class="dropdown-item" href="#">پیوستن به تیم ما</a></li>
+<li><a class="dropdown-item" href="#شق">راه های ارتباطی ما</a></li>
+<li><a class="dropdown-item" href="#">تامین کنندگان ما</a></li>
+
+
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="color:black;">محصولات</a>
+<ul class="dropdown-menu" style="text-align: right;background-color: rgb(255, 255, 255);">
+<li style="width: 1000px;"><a class="dropdown-item" href="#" style="border-bottom:1px solid rgb(224, 210, 210) ;">شکلات کادویی</a></li>
+<li><a class="dropdown-item" href="#">گل شاخه بریده</a></li>
+<li><a class="dropdown-item" href="#">گیاه آپارتمانی</a></li>
+<li><a class="dropdown-item" href="#">هدیه</a></li>
+<li><a class="dropdown-item" href="#">رز جاودان</a></li>
+<li><a class="dropdown-item" href="#">ارسال گل به ایران </a></li>
+
+<li><a class="dropdown-item" href="#">ارسال گل به خارج</a></li>
+<li><a class="dropdown-item" href="#">مشاوره آنلاین گل و گیاه</a></li>
+<li><a class="dropdown-item" href="#">خدمات باغبانی در محل</a></li>
+<li><a class="dropdown-item" href="#">گلدان تبلیغاتی</a></li>
+<li><a class="dropdown-item" href="#">طرای دکوراسون با گیاه</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="color:black;">راهنمایی</a>
+<ul class="dropdown-menu" style="text-align: right;background-color: rgb(255, 253, 253);" >
+<li  style="width: 1000px;"><a class="dropdown-item" href="#">سوالات متداول</a></li>
+<li><a class="dropdown-item" href="#">نمونه متن کارت پستال</a></li>
+<li><a class="dropdown-item" href="#">معنی گل ها</a></li>
+<li><a class="dropdown-item" href="#">اسم گیاهان آپارتمانی باعکس</a></li>
+<li><a class="dropdown-item" href="#">انواع گیاهان بیرونی وفضای باز</a></li>
+<li><a class="dropdown-item" href="#">انواع گل شاخه بریده با عکس</a></li>
+<li><a class="dropdown-item" href="#">اسم انواع کاکتوس با عکس</a></li>
+<li><a class="dropdown-item" href="#">افزایش طول عمر گل ها وگیاهان</a></li>
+<li><a class="dropdown-item" href="#">روش پرداخت عرضی</a></li>
+<li><a class="dropdown-item" href="#">لیست گلفروشی های خرم آباد</a></li>
+<li><a class="dropdown-item" href="#">شرایط وضوابط</a></li>
+
+
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="index.html" target="_blank" style="color:rgb(0, 0, 0) ;">صفحه اصلی</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="gol apartemany.html" target="_blank" style="color:rgb(0, 0, 0)  ;">گیاهان آپارتمانی</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="lacchary.html" target="_blank" style="color:rgb(0, 0, 0)  ;">لاکچری</a>
+</li>    
+<li class="nav-item">
+<a class="nav-link" href="big flower.html" target="_blank" style="color:rgb(0, 0, 0)  ;">گیاهان بزرگ</a>
+</li>    
+<li class="nav-item">
+<a class="nav-link" href="birthday flower.html" target="_blank" style="color:rgb(0, 0, 0) ;">گل تولد</a>
+</li>    
+<li class="nav-item">
+<a class="nav-link" href="sefaresh.html" target="_blank" style="color:rgb(0, 0, 0) ; ">سفارش روز</a>
+</li>    
+<li class="nav-item">
+<a class="nav-link" href="roz.html" target="_blank" style="color:rgb(0, 0, 0) ;">گل رز</a>
+</li>   
+<li class="nav-item">
+<a class="nav-link" href="#ar"  style="color:rgb(0, 0, 0) ;">راه های ارتباطی با ما</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="about.html"  style="color:rgb(0, 0, 0) ;">درباره ما</a>
+</li>
+</ul>
+
+
+
+</div>
+</nav>
+
+
+
+
+
+<div style="
+width: 50px;height: 50px;
+margin-top: 50px;
+padding-top:10px;
+border-radius: 50px;
+text-align: center;"
+class="fixed-top"><a href="#↓"style="text-decoration:none;color:black;">▼</a></div>
+
+
+
+
+<div style="margin-top:100px;direction: rtl;">
+<div style="text-align: center;cursor:context-menu;" class="onvan"> <h1><p><b>سفارش روز</b></p></h1></div>
+
+<div class="row"  style="margin-top: 80px;">
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="#">
+<img src="img/12.webp" alt="..." title="خرید این گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>تراریوم بونسای جینسینگ بسته</b></h5></a>
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">581,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger "  disabled>خرید این دسته گل</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="4,2.html">
+<img src="img/13.webp" alt="..." 
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="4,2.html" style="color: black;"><h5><b>تراریوم بونسای دارک</b></h5></a>
+<a href="4,2.html" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">589,000 تومان</a>
+<br>
+<a href="4,2.html" class="btn btn-danger ">خرید این باکس گل</a>
+</div>
+</div>
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="#">
+<img src="img/62.webp" alt="..."  title="خرید این گیاه فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>فیکوس الاستیکا بلک در گلدان سفالی</b></h5></a>
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">784,900 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این گیاه</button>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="#"><img src="img/63.jpg" alt="..."  title="خرید این گیاه فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>کاپ گل قرمز هلندی </b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">892,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این گیاه</button>
+</div>
+</div>
+
+
+
+</div>
+</div>
+<div style="margin-top: 100px;direction: rtl;">
+<div class="row"  >
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="4.html">
+<img src="img/22.jpg" alt="..." 
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="4.html" style="color: black;"><h5><b>آنتوریوم صورتی با گلدان فلزی استوانه</b></h5></a>
+<a href="4.html" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">819,000 تومان</a>
+<br>
+<a href="4.html" class="btn btn-danger ">خرید این دسته گل</a>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="#">
+<img src="img/64.webp" alt="..." title="خرید این گیاه فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>آنتوریوم با گلدان فلزی مخروطی</b></h5></a>
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">1,093,950 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled >خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="3.2.html">
+<img src="img/9.webp" alt="..." 
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="3.2.html" style="color: black;"><h5><b>آنتوریوم قرمز با گلدان فلزی مخروطی</b></h5></a>
+<a href="3.2.html" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">529,900 تومان</a>
+<br>
+<a href="3.2.html" class="btn btn-danger ">خرید این گیاه</a>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="#"><img src="img/65.webp" alt="..." title="خرید این گیاه فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>آگلونما برفی با گلدان فایبر گلاس</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">2,332,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این گیاه</button>
+</div>
+</div>
+
+
+
+</div>
+</div>    
+
+
+
+<div style="margin-top: 100px;direction: rtl;">
+<div class="row"  >
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="#">
+<img src="img/66.jpg" alt="..." title="خرید این گیاه فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;--c: #87d783;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>افوریبا قرمز با گلدان مواد آلی</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">336,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این  گیاه</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="#">
+<img src="img/67.jpg" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس آگرین</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">497,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="#">
+<img src="img/68.webp" alt="..." title="خرید این هدیه فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس ال دا</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">2,088,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این هدیه</button>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="#"><img src="img/69.webp" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس دلبند</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">338,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<div style="margin-top: 100px;direction: rtl;">
+<div class="row"  >
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="#">
+<img src="img/70.webp" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس شیشه ای نیکلاس</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">828,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" 
+style="text-align: center;">
+<a href="#">
+<img src="img/71.webp" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor"></a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس مرغ عشق</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">543,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="#">
+<img src="img/72.webp" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس میتراس</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">1,238,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;">
+<a href="#"><img src="img/73.webp" alt="..." title="خرید این  هدیه فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس وانیک</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">1,548,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این هدیه</button>
+</div>
+</div>
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;margin-top: 100px;">
+<a href="#"><img src="img/74.jpg" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس چوبی لومی یر</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">1,098,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;margin-top: 100px;">
+<a href="#"><img src="img/75.jpg" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس چوبی میتره</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">805,500 تومان</a>
+<br>
+<button href="#" class="btn btn-danger " disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;margin-top: 100px;">
+<a href="#"><img src="img/76.jpg" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس گل میخک سرخابی</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">990,000 تومان</a>
+<br>
+<button href="#" class="btn btn-danger "disabled>خرید این باکس گل</button>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col col-xxl-3 col-lg-3 col-md-6 col-sm-6 col-12 mar" style="text-align: center;margin-top: 100px;">
+<a href="#"><img src="img/77.webp" alt="..." title="خرید این باکس گل فعلا ممکن نیست"
+style="width: 250px; height:250px;border-radius: 10px;"
+class="bor">
+</a>
+
+<div style="padding-top: 10px;">
+<a href="#" style="color: black;"><h5><b>باکس گل کلاسیک</b></h5></a>
+
+<a href="#" style="color: rgb(174, 54, 54);
+text-decoration: none;font-size:20px;">832,500 تومان</a>
+<br>
+<button href="#" class="btn btn-danger "disabled>خرید این باکس گل</button>
+</div>
+</div>
+</div>
+</div> 
+
+
+
+
+
+<hr  style="background-color: rgb(159, 159, 159);">
+<!--------------------------راه های ارتباطی----------------------->
+
+<div class="container" style="margin-top:20px;">
+
+
+<div  style="text-align: center;">
+<div class="row ">
+
+<div class="p-2 mt-3 col" >
+<a href="#" data-bs-toggle="modal" data-bs-target="#mymod"><img src="img/telephone.jpg"  alt="..."style="width: 70px; height: 70px;" class="avatar" ></a>
+</div> 
+<!-------------------------modal telefon---------------------------------------------->
+<div class="modal" id="mymod" >
+<div class="modal-dialog modal-dialog-contered">
+<div class="modal-content">                              
+<div class="modal-body ca"
+style="background-color: rgba(0, 0, 0, 0.294);color: white;">
+<p>تماس با ما</p>
+<span id="s" class="top"></span>
+<span id="s" class="right"></span>
+<span id="s" class="bottom"></span>
+<span id="s" class="left"></span>        
+<form >
+<input type="text" style="text-align: right;" 
+class="form-control" placeholder="نام شما" title="نام خود را وارد کنید">
+<div class="row mt-3">
+<div class="col">
+<input type="tel" style="height:50px;" title="شماره تماس خود را وارد کنید"
+class="form-control " placeholder="تلفن تماس">
+</div>
+<div class="col">
+<input type="email"  style="height: 50px;" title="ایمیل خود را وار کنید لطفا"
+class="form-control" placeholder="پست الکترونیکی">
+</div>
+</div>                                     
+<textarea  class="mt-3"
+name="" cols="50" rows="10" placeholder="پیام شما" style="text-align: right;padding: 10px;" 
+title="پیام خود را در این قسمت وارد کنید"></textarea>         
+<input onclick="arsal()" type="submit" class="mt-3 btn btn-dark" value="ارسال"  
+style="width: 400px;">
+<script>
+function arsal(){
+alert("نتیجه از طریق پیامک ارسال میگردد.")
+}
+</script>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<!-------------------------modal telefon---------------------------------------------->
+
+
+<div class="p-2 mt-3  col" onclick="macan()">  
+<a href="#"> <img src="img/ma.png" class="avatar" alt="..." style="width:70px; height: 70px;"></a> </div>
+<script>
+function macan(){
+alert("مکان در دسترس نیست.");
+}
+</script>
+
+
+
+
+<div class="p-2 mt-3 col" onclick="rayanameh()">   
+<a href="#"><img src="img/email.png" class="avatar" alt="..." style="width: 70px; height:70px;"></a> </div>
+<script>
+function rayanameh(){
+alert("ایمیل(رایانامه) در دسترس نیست.");
+}
+</script>
+
+
+
+
+
+<div class="p-2 mt-3 col" onclick="insta()"> 
+<a href="#"> <img class="avatar" src="img/in.png" alt="..." style="width: 70px; height:70px;"></a> </div>
+<script>
+function insta(){
+alert("صفحه اینستاگرام فعلا ساخته نشده.");
+}
+</script>
+
+</div>
+</div>
+<a name="ar"></a>
+
+
+
+</div>
+
+
+
+
+<hr  style="background-color: rgb(159, 159, 159);">
+
+
+<!---------------------------------------عضویت در خبرنامه----------------------> 
+
+
+<div style="background-color: rgba(239, 222, 222, 0.74);
+text-align: center;
+height:110px;
+margin-top: 30px;
+color: rgb(0, 0, 0);">
+
+
+<div style="background-color: rgba(239, 222, 222, 0.74);
+text-align: center;
+height:110px;
+margin-top: 20px;
+color: rgb(0, 0, 0);">
+
+<div>
+<form >
+<input type="email" placeholder="ایمیل"
+style="height:40px;width:200px;margin-top:10px;
+border-radius: 10px;
+padding: 10px;color: rgb(0, 0, 0);">
+
+<input onclick="khabar()" class="btn btn-danger"
+id="button" type="submit" value="عضویت در خبرنامه" style="width: 90px;
+font-size:x-small;">
+
+<script>
+function khabar(){
+alert("عضویت در خبرنامه ممکن نیست.");
+}
+</script>
+</form>
+</div>
+<div style="margin-top:5px;" >
+شنبه تا پنجشنبه ساعت9الی 19
+/ واتس آپ <a href="#" style="color:rgb(4, 4, 4);">09024581457856</a>
+/ تماس <a href="#" style="color:rgb(1, 1, 1);">09056544757856</a>
+</div>     
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  style="text-align: center; 
+margin-top: 20px;
+background-color: rgba(239, 222, 222, 0.74);">
+
+<div >
+<a href="#"><img src="img/78.webp "
+style="width:30;height:30px;cursor:no-drop;margin-top:15px;"></a>
+</div>
+
+<p>
+استفاده از مطالب گل فروشی اینترنتی گلنار تنها برای مقاصد غیر تجاری و با ذکر منبع
+بلامانع است. کلیه حقوق این سایت متعلق به
+<br>
+شرکت ارزش آفرینان فردای روشن (گل فروشی آنلاین گل ستان) است
+<br>
+<b> هنرجو طراح سایت:فاطمه نیازی پایه دوازدهم رشته شبکه ونرم افزار خرم آباد</b>
+<br>
+<b><b style="color: red;">توجه توجه:</b> 
+بیشتر متن ها و تصاویر استفاده شده در این سایت متعلق به سایت  گلفروشی گل ستان می باشد
+<br>
+این سایت صرفا جهت یک پروژه تمرینی می باشد
+</b>
+</p>
+</div>
+
+
+
+<a name="↓"></a>
+
+<div style="background-color:rgba(218, 130, 130, 0.52) ;
+width: 50px;height: 50px;
+padding-top:10px;
+border-radius: 50px;
+text-align: center;"
+class="fixed-bottom"><a href="#↑"style="text-decoration:none;color:black;">▲</a></div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

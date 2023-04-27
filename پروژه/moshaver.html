@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات مشاوره گل و گیاه آپارتمانی و گیاه پزشکی</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+<style>
+@font-face{font-family:'Vazir-Medium-FD-WOL';
+src:url('fon/farsi/Vazir-Medium-FD-WOL.eot');
+src: url('fon/farsi/Vazir-Medium-FD-WOL.ttf');
+src: url('fon/farsi/Vazir-Medium-FD-WOL.woff');}
+
+ .bordbot:hover{border-bottom: 2px solid rgb(4, 68, 4);}
+
+
+    .onvan::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .onvan:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .onvan::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(252, 182, 169);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+ .onvan {
+    position: relative;
+    
+  }
+
+
+.zom:hover{
+-webkit-transform: scale(0.9);
+-o-transform: scale(0.9);
+-moz-transform: scale(0.9);
+-webkit-transition-duration: 1.5s;
+-o-transition-duration: 1.5s;
+-moz-transition-duration: 1.5s;
+}
+.zom{
+-webkit-transition-duration: 1.5s;
+-o-transition-duration: 1.5s;
+-moz-transition-duration: 1.5s;   
+}
+
+
+</style>
+</head>
+<body style="font-family:Vazir-Medium-FD-WOL;">
+
+<div class="container-fluid">
+
+
+     <!-------------menu-------------->
+  <nav class="navbar navbar-expand-xxl navbar-dark  fixed-top" style="background-color: rgb(245, 177, 175);">
+    <div class="container-fluid">
+
+<!-------------sabad kharid---------------------------------------------------->
+      <div class="navbar-brand  " href="sabad.html"  style="background-image: url(img/sabad.png);
+      width: 80px;height: 50px;
+      background-size:50px 50px;
+      background-repeat: no-repeat;padding-top: 0%;text-align: right;">  
+    <span class="badge  rounded-circle " style="font-size:18px ;background-color: #ff0000;color: rgb(255, 255, 255);
+    margin-right: 10px;" >0</span>
+      </div>
+
+        
+        <a href="login.html"  class="navbar-brand   rounded-pill text-dark" target="_blank">ورود/ثبت نام</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  dropstart   " id="collapsibleNavbar" style="direction:rtl ;">
+
+        <ul class="nav nav-pills" style=" border-bottom: 1px solid rgb(251, 206, 206);">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" style="color:black;">گلنار</a>
+            <ul class="dropdown-menu dar" style="text-align: right;background-color: rgb(255, 255, 255);">
+              <li  style="width:1000px;"><a class="dropdown-item" href="about.html" style="border-bottom:1px solid rgb(224, 210, 210) ;">درباره ما</a></li>
+              <li><a class="dropdown-item" href="#">معرفی گل آراها</a></li>
+              <li><a class="dropdown-item" href="#">پیوستن به تیم ما</a></li>
+              <li><a class="dropdown-item" href="#ar">راه های ارتباطی ما</a></li>
+              <li><a class="dropdown-item" href="#">تامین کنندگان ما</a></li>
+              
+
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="color:black;">محصولات</a>
+            <ul class="dropdown-menu" style="text-align: right;background-color: rgb(255, 255, 255);">
+              <li style="width: 1000px;"><a class="dropdown-item" href="#" style="border-bottom:1px solid rgb(224, 210, 210) ;">شکلات کادویی</a></li>
+              <li><a class="dropdown-item" href="#">گل شاخه بریده</a></li>
+              <li><a class="dropdown-item" href="#">گیاه آپارتمانی</a></li>
+              <li><a class="dropdown-item" href="#">هدیه</a></li>
+              <li><a class="dropdown-item" href="#">رز جاودان</a></li>
+              <li><a class="dropdown-item" href="#">ارسال گل به ایران </a></li>
+            
+              <li><a class="dropdown-item" href="#">ارسال گل به خارج</a></li>
+              <li><a class="dropdown-item" href="#">مشاوره آنلاین گل و گیاه</a></li>
+              <li><a class="dropdown-item" href="#">خدمات باغبانی در محل</a></li>
+              <li><a class="dropdown-item" href="#">گلدان تبلیغاتی</a></li>
+              <li><a class="dropdown-item" href="#">طرای دکوراسون با گیاه</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="color:black;">راهنمایی</a>
+            <ul class="dropdown-menu" style="text-align: right;background-color: rgb(255, 253, 253);" >
+              <li  style="width: 1000px;"><a class="dropdown-item" href="#">سوالات متداول</a></li>
+              <li><a class="dropdown-item" href="#">نمونه متن کارت پستال</a></li>
+              <li><a class="dropdown-item" href="#">معنی گل ها</a></li>
+              <li><a class="dropdown-item" href="#">اسم گیاهان آپارتمانی باعکس</a></li>
+              <li><a class="dropdown-item" href="#">انواع گیاهان بیرونی وفضای باز</a></li>
+              <li><a class="dropdown-item" href="#">انواع گل شاخه بریده با عکس</a></li>
+              <li><a class="dropdown-item" href="#">اسم انواع کاکتوس با عکس</a></li>
+              <li><a class="dropdown-item" href="#">افزایش طول عمر گل ها وگیاهان</a></li>
+              <li><a class="dropdown-item" href="#">روش پرداخت عرضی</a></li>
+              <li><a class="dropdown-item" href="#">لیست گلفروشی های خرم آباد</a></li>
+              <li><a class="dropdown-item" href="#">شرایط وضوابط</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+
+
+        <ul class="navbar-nav" style="text-align:right ;">
+    
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" target="_blank" style="color:rgb(0, 0, 0) ;">صفحه اصلی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gol apartemany.html" target="_blank" style="color:rgb(0, 0, 0)  ;">گیاهان آپارتمانی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lacchary.html" target="_blank" style="color:rgb(0, 0, 0)  ;">لاکچری</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="big flower.html" target="_blank" style="color:rgb(0, 0, 0)  ;">گیاهان بزرگ</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="birthday flower.html" target="_blank" style="color:rgb(0, 0, 0) ;">گل تولد</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="sefaresh.html" target="_blank" style="color:rgb(0, 0, 0) ; ">سفارش روز</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="roz.html" target="_blank" style="color:rgb(0, 0, 0) ;">گل رز</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="#ar"  style="color:rgb(0, 0, 0) ;">راه های ارتباطی با ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"  style="color:rgb(0, 0, 0) ;">در باره ما</a>
+          </li>
+
+        </ul>
+
+
+       
+      </div>
+  </nav>
+
+
+  <!---------------------------------------------text----------------------------->
+<div style="text-align:center;margin-top:90px;">
+<span style="color: rgb(5, 71, 49);">
+<h3> <b class="onvan">
+ خدمات مشاوره گل و گیاه آپارتمانی و گیاه پزشکی</b></h3> </span></div>
+
+
+<!----------------------------------------img--------------------->
+<div style="text-align: center;">
+<img src="img/مشاور.webp" alt="" class="zom">
+</div>
+
+<!---------------------------------------------text----------------------------->
+<div style="text-align:center;margin-top:90px;">
+ <span style="color: rgb(5, 71, 49);">
+<h3><a href="#" style="text-decoration: none;color: rgb(5, 71, 49);"> <b class="onvan">
+مشاورین متخصص گیاه پزشک آماده رفع مشکلات گلها و گیاهان شما</b></a></h3> </span>
+<button type="button" class="btn btn-danger">شروع چت با گیاه پزشک</button>
+</div>
+
+
+<!-----------circle menu------------------------------------------------------------------------------------------->
+
+<div>
+<div style="text-align:center;margin-top:90px;">
+<span style="color: rgb(5, 71, 49);"><h3>
+<b class="onvan">
+خدمات مشاوره گل و گیاه آپارتمانی و گیاه پزشکی آنلاین و در محل</b></h3>
+<br>
+<b class="onvan">
+چرا خدمات مشاوره گیاه پزشکی گُل‌سِتان</b></span></div>
+    
+    
+        <div class="row" style="margin-top:20px;margin-left: 40px;">
+        <div class="col col-sm-4 col-md-4 col-xxl-2 col-lg-2" style="text-align: center;">
+            <a href="#">
+                <img src="image/6.png" alt="..." 
+                style="width:100px;height: 100px;cursor: context-menu;">
+            </a>
+            <br><br>
+            <div style="text-align:center ;">
+            <span style="text-decoration:none;color:rgb(0, 0, 0);">
+            گیاه پزشکان متخصص</span></div>
+    
+        </div>
+    
+    
+    
+        <div class="col col-sm-4 col-md-4 col-xxl-2 col-lg-2" style="text-align: center;">
+            <a href="#">
+                <img src="image/4.png" alt="..." 
+                style="width:100px;height: 100px;cursor: context-menu;">
+            </a>
+            <br><br>
+            <div style="text-align:center ;">
+            <span  style="text-decoration:none;color:rgb(0, 0, 0);">
+                قیمت پایین </span></div>
+    
+        </div>
+        <div class="col col-sm-4 col-md-4 col-xxl-2 col-lg-2" style="text-align: center;">
+            <a href="#">
+                <img src="image/2.png" alt="..." 
+                style="width:100px;height: 100px;cursor: context-menu;">
+            </a>
+            <br><br>
+            <div style="text-align:center ;">
+            <span  style="text-decoration:none;color:rgb(0, 0, 0);">
+                 اعزام سریع متخصص</span></div>
+    
+        </div>
+       
+        <div class="col col-sm-4 col-md-4 col-xxl-2 col-lg-2" style="text-align: center;">
+            <a href="#">
+                <img src="image/7.png" alt="..." 
+                style="width:100px;height: 100px;cursor: context-menu;">
+            </a>
+            <br><br>
+            <div style="text-align:center ;">
+            <span  style="text-decoration:none;color:rgb(15, 0, 3);" >
+                پاسخگویی سریع</span></div>
+    
+        </div>
+        <div class="col col-sm-4 col-md-4 col-xxl-2 col-lg-2" style="text-align: center;">
+            <a href="#">
+                <img src="image/3.png" alt="..." 
+                style="width:100px;height: 100px;cursor: context-menu;">
+            </a>
+            <br><br>
+            <div style="text-align:center ;">
+            <span  style="text-decoration:none;color:rgb(0, 0, 0);" >
+                تجربه درمان صدها گیاه</span></div>
+    
+        </div>
+    
+    
+        <div class="col col-sm-4 col-md-4 col-xxl-2 col-lg-2" style="text-align: center;">
+            <a href="#">
+                <img src="image/5.png" alt="..." 
+                style="width:100px;height: 100px;cursor: context-menu;">
+            </a>
+               <br><br>
+               <div style="text-align:center ;">
+            <span  style="text-decoration:none;color:rgb(0, 0, 0);">
+                تضمین برگشت وجه</span></div>
+        </div>
+    </div>
+    </div>
+    <!-----------circle menu finish------------------------------------------>  
+      <br><br><br><br>
+              <!-------------------------عکس 1---------------------->
+
+    <div class="row mt-5">
+        <div class="col  col-12 col-lg-6 col-md-12 col-sm-12 " style="text-align: center;padding-top: 50pxs;">
+            <div>
+        <span>
+            <h5>خدمات مشاوره آنلاین گیاه پزشکی</h5>
+
+            شاید برگ‌های گیاه مورد علاقه شما به تازگی زرد رنگ شده است. شاید هم در یک روز چند گیاه مختلف خریده‌اید و اطلاعی در مورد نحوه نگهداری از آن‌ها ندارید و نیاز به مشاوره گیاه پزشکی دارید! در مورد نور مورد نیاز گیاهان سوالی دارید؟ آبیاری؟ گردش هوا؟
+            کافی است از طریق مشاوره آنلاین گل و گیاه با کارشناسان خبره گیاه پزشک گُل‌سِتان مشورت کنید و در مورد تمامی سوالات و نگرانی‌ها خود با آن‌ها حرف بزنید.
+            سایت گیاه پزشکی گُل‌سِتان بیماری‌های گیاهان شما را درمان می‌کند
+        </span>
+        </div>
+        </div>
+        <div class="col  col-12 col-lg-6 col-md-12 col-sm-12 "  style="text-align: center;">
+        <img src="img/38.webp" style="width: 700px;" class="img-fluid">
+        </div>
+        </div>
+
+
+        <!-------------------------عکس 2---------------------->
+        <br><br><br><br>
+        <div class="row mt-5">
+            <div class="col  col-12 col-lg-6 col-md-12 col-sm-12 " style="text-align: center;padding-top: 50pxs;">
+                <div>
+            <span>
+                <h5>خدمات باغبانی در محل (سایر)</h5>
+                در هر کجای ایران که باشید می‌توانید از اکثر خدمات باغبانی در محل، اعزام سریع باغبان گل و گیاه گُل سِتان استفاده کنید. کافیست موبایل خود را وارد کنید تا به راحتی آب خوردن در کمتر از 10 دقیقه با شما تماس بگیرم و کار را شروع کنیم. در تیم ما افرادی دارای تخصص های طراحی دکوراسیون، مهندس زبده باغبانی و گیاه پزشکی و باغبانان مجرب برای ارائه خدمت به شما حضور دارند. همه افرادی با تجربه و قابل اعتمادی هستند که صلاحیتشان تایید شده و آموزش های لازم را دیده‌اند.
+            </span>
+            <br><br>
+            <a type="button" class="btn btn-danger" href="baghbany dar mahal.html">دریافت خدمات باغبانی سایر</a>
+            </div>
+            </div>
+            <div class="col  col-12 col-lg-6 col-md-12 col-sm-12 "  style="text-align: center;">
+            <img src="img/39.webp" style="width: 700px;" class="img-fluid">
+            </div>
+          
+            </div>
+   <!---------------------------------------------text----------------------------->
+<div style="text-align:center;margin-top:90px;">
+<span style="color: rgb(5, 71, 49);">
+<h3> <b data-toggle="collapse" data-target="#demo"
+    style="cursor: pointer;"   class="bordbot">
+    مشاوره آنلاین گیاه آپارتمانی (گیاه پزشکی)</b></h3> </span>
+
+<div id="demo" class="collapse show" style="margin-right: 20px;margin-left: 20px;justify-content: right ;">
+<span>
+    این روزها، اینترنت از مطالب مختلف پر شده است و هیچ فیلتری برای انتشار اطلاعات صحیح وجود ندارد. به همین
+     دلیل خیلی اوقات طبق نکات نوشته شده در فضای مجازی عمل می‌کنید اما نتیجه‌ای 
+    حاصل نمی‌شود. این خود دلیلی بر استفاده از خدمات مشاوره گیاه پزشکی است.
+
+    گیاه پزشکان ما از حرفه‌ای‌ترین افراد این زمینه هستند و می‌توانند به بهترین نحو شما را برای 
+    دستیابی به گیاهانی سالم و ایده‌آل راهنمایی کنند. پس از اینکه سوال خود را
+     از مشاوران ما پرسیدید منتظر باشید تا به شما پاسخ بدهند. هنگامی که پاسخ
+     از طرف گیاه پزشک  داده شد، برای شما یک پیامک اطلاع رسانی ارسال خواهد شد. 
+    
+    داشتن گیاهانی سالم و سرحال
+     نیازمند داشتن اطلاعات لازم در مورد روش نگهداری گیاهان مختلف به‌اضافه تجربه است. طبیعی است
+     که همه ما چنین اطلاعاتی نداشته و ممکن است در طول نگهداری از گیاهان آپارتمانی خود به
+     مشکل بخوریم. در چنین شرایطی راهنمایی گرفتن از یک مشاور گیاه پزشک بهترین انتخاب است، 
+    چرا که یک گیاه پزشک، تجربه و دانش لازم را داشته و به‌راحتی از پس حل مشکلات گیاه شما بر
+     می‌آید. ازاین‌رو در گُل‌سِتان ضرورت وجود خدمات مشاوره آنلاین گیاه پزشکی را دیدیم و درصدد 
+    راه‌اندازی یک سرویس خدمات مشاوره گیاهان آپارتمانی به صورت آنلاین برآمدیم. اما اگر
+     خودتان فرصت رسیدگی و انجام تجویزهای دکتر گیاه پزشک را ندارید از خدمات
+     باغبانی گُل سِتان استفاده نمائید. در ادامه بیشتر در مورد خدمات مشاوره
+     گیاه آپارتمانی گُل‌سِتان و انواع آن برایتان خواهیم گفت.   
+</span>
+</div>
+</div>   
+ <!---------------------------------------------text----------------------------->
+ <div style="text-align:right;margin-top:90px;">
+    <span style="color: rgb(5, 71, 49);">
+    <h3> <b data-toggle="collapse" data-target="#text"
+        style="cursor: pointer;"   class="bordbot">
+        مشاوره گیاه پزشکی قبل از خرید گیاه</b></h3> </span>
+    
+    <div id="text" class="collapse show" style="margin-right: 20px;margin-left: 20px;justify-content: right ;">
+    <span>
+        بدون‌شک همه گیاهان شرایط نگهداری یکسانی نداشته و هر کدام شرایط خاص خود را دارند. در مشاوره قبل از خرید سرویس خدمات مشاوره گیاه پزشکی گُل‌سِتان ما با درنظر گرفتن شرایط محیط زندگی و متراژ فضا و همچنین سبک زندگی شما، لیستی از گیاهان مناسب برای محیط زندگی‌تان را به شما خواهیم داد. ضمن اینکه در مورد گیاهانی که نمی‌توانید در خانه‌تان نگهداری کنید نیز به شما خواهیم گفت.
+
+        برای مراجعه حضوری گیاه پزشک در تهران نیز می‌توانید با ما تماس بگیرید.</span>
+    </div>
+    </div>
+ <!---------------------------------------------text----------------------------->
+ <div style="text-align:right;margin-top:90px;">
+    <span style="color: rgb(5, 71, 49);">
+    <h3> <b data-toggle="collapse" data-target="#tex"
+        style="cursor: pointer;"   class="bordbot">
+        مشاوره چیدمان گیاه</b></h3> </span>
+    
+    <div id="tex" class="collapse show" style="margin-right: 20px;margin-left: 20px;justify-content: right ;">
+    <span>
+        در این خدمت در مورد چیدمان گیاهان، اینکه هر گیاه در کدام قسمت از منزل شما قرار بگیرد به شما خواهیم گفت
+    </span>
+    </div>
+    </div>
+<!---------------------------------------------text----------------------------->
+<div style="text-align:right;margin-top:90px;">
+    <span style="color: rgb(5, 71, 49);">
+    <h3> <b data-toggle="collapse" data-target="#text3"
+        style="cursor: pointer;"   class="bordbot">
+        مشاوره در مورد نگهداری گل آپارتمانی</b></h3> </span>
+    
+    <div id="text3" class="collapse show" style="margin-right: 20px;margin-left: 20px;justify-content: right ;">
+    <span>
+        در سرویس مشاوره در مورد نگهداری گیاهان گُل‌سِتان، متخصصین ما همه آنچه برای نگ
+        هداری از گیاهان آپارتمانی خود به آن نیاز دارید را در اختیار شما قرار خواهند داد
+        . مشاوره‌های کلینیک گیاه پزشکی گُل‌سِتان شامل موارد زیر می‌شوند    
+    </span>
+    <br><br>
+    <span>
+   
+        <ul style="direction: rtl;margin-right: 30px;">
+        <li>ارزیابی موقعیت نور خورشید دریافتی محیط</li>
+        <li>ارزیابی دما و رطوبت</li>
+        <li>ارزیابی گلدان و نوع خاک</li>
+        <li>پیشنهاداتی برای جلوگیری و درمان آفات</li>
+        <li>پیشنهاداتی برای بهبود سلامت گیاه</li>
+        <li>توصیه‌هایی در خصوص تکثیر گیاه</li>
+        <li>نکات هرس کردن و کوددهی</li>
+    </ul>
+</span>
+
+    </div>
+    </div>
+
+<!---------------------------------------------text----------------------------->
+<div style="text-align:right;margin-top:90px;">
+    <span style="color: rgb(5, 71, 49);">
+    <h3> <b data-toggle="collapse" data-target="#text4"
+        style="cursor: pointer;"   class="bordbot">
+        چطور از سرویس خدمات مشاوره نگهداری گیاه گُل‌سِتان استفاده کنیم؟</b></h3> </span>
+    
+    <div id="text4" class="collapse show" style="margin-right: 20px;margin-left: 20px;justify-content: right ;">
+    <span>
+        ابتدا در پلتفرم ثبت نام کنید. با وارد کردن نام و نا
+        م خانوادگی و شماره همراه، برای شما یک کد احراز هویت ارسال خواهد شد. پس از
+         بررسی کد احراز هویت شما در سامانه ثبت نام می‌شوید. سپس سامانه چت مشاور
+        ه با گیاه پزشک به شما نمایش داده میشود. با پرداخت هزینه مشاوره شما 
+        می‌توانید، تمامی سوالات خود را از مشاورین گُل‌سِتان بپرسید. 
+
+        مشاوران گیاه پزشکی ما از شنبه تا چهارشنبه از ساعت 8 الی 16 پاسخگوی شما عزیزان خوا
+        هند بود.  به دلیل حجم بالای سوالات ممکن است، زمان پاسخگویی با ک
+        می تاخیر انجام شود. پیشاپیش از صبر و تحمل شما سپاسگزاریم   
+     </span>
+    </div>
+    </div>
+<!---------------------------------------------text----------------------------->
+<div style="text-align:right;margin-top:90px;">
+    <span style="color: rgb(5, 71, 49);">
+    <h3> <b data-toggle="collapse" data-target="#text5"
+        style="cursor: pointer;"   class="bordbot">
+        اورژانس گل و گیاه آپارتمانی گُل سِتان</b></h3> </span>
+    
+    <div id="text5" class="collapse show" style="margin-right: 20px;margin-left: 20px;justify-content: right ;">
+    <span>
+        اورژانس گل و گیاه گُل سِتان آماده ارائه مشاوره حرفه ای در زمینه گیاهان به شما عزیزان سراسر ایران می باشد
+<br>
+        7 عامل مهم برای نگهداری از گیاهان در منزل و محل 
+        کارآبیاری، نور، خاک، دما، رطوبت، کود و کنترل آفات می باشد. با
+         توجه به اینکه هر گیاه نیازش به این 7 عامل متفاوت می باشد
+        . باید توجه کنید که مطابق با نیاز آن به آنها رسیدگی کنید. آبیاری و نور مهمتر از سایر
+        
+        موارد می باشد، این دو عامل می تواند بیشترین تاثیر را در رشد و نگهداری گیاه شما داشته باشد،
+         بیشتر گیاهان در خانه و شرکت ها به علت زیاد آب دادن پژمرده یا خشک می شوند. شما می توانید
+         در صورت بروز مشکل در گل و گیاه شما از خدمات مشاوره تلفنی گل و گیاه ما استفاده کنید و
+         با مشاورین متخصص دارای فوق لیسانس رشته باغبانی در رابطه با گیاهانتان مشورت کنید.
+        
+        اگر شما هم نیاز به مشاوره گیاه پزشکی اینترنتی برای گیاه
+        ان آپارتمانی یا درختان خود دارید، می‌توانید روی متخصصین گیاه پزشک گل و گیاه گُل‌سِتان حساب کنید و
+         از راهنمایی‌های آنها استفاده کنید. سایت گیاه پزشکی گُل‌سِتان با خبره‌ترین گیاه پزشکان آماده ارائه
+         خدمت به شما می‌باشد. مشاوره گیاه پزشکی گُل سِتان دارای تضمین برگشت وجه در صورت عدم رضایت می‌باشد  
+    </span>
+    </div>
+    </div>
+    <br><br>
+    <!------------------------------img--------------------->
+    <div style="text-align: center;">
+    <img src="img/organs.webp" alt="" class="img-fluid">
+    </div>
+    <br><br><br>
+
+
+
+
+
+
+
+<!------------------------------------راه ارتباطی------------------------------------>
+
+<div class="container" style="margin-top:20px;">
+      
+   
+        <div  style="text-align: center;">
+            <div class="row ">
+          
+        <div class="p-2 mt-3 col" >
+        <a href="#" data-bs-toggle="modal" data-bs-target="#mymod"><img src="img/telephone.jpg"  alt="..."style="width: 70px; height: 70px;" class="avatar" ></a>
+        </div> 
+<!-------------------------modal telefon---------------------------------------------->
+        <div class="modal" id="mymod" >
+            <div class="modal-dialog modal-dialog-contered">
+                <div class="modal-content">
+                   
+                    <div class="modal-body ca"
+                     style="background-color: rgba(0, 0, 0, 0.294);color: white;">
+                        <p>تماس با ما</p>
+                        <span id="s" class="top"></span>
+                        <span id="s" class="right"></span>
+                        <span id="s" class="bottom"></span>
+                        <span id="s" class="left"></span>
+
+                    <form >
+                    <input type="text" style="text-align: right;" 
+                    class="form-control" placeholder="نام شما" title="نام خود را وارد کنید">
+                    <div class="row mt-3">
+                        <div class="col">
+                    <input type="tel" style="height:50px;" title="شماره تماس خود را وارد کنید"
+                     class="form-control " placeholder="تلفن تماس">
+                       </div>
+                       <div class="col">
+                        <input type="email"  style="height: 50px;" title="ایمیل خود را وار کنید لطفا"
+                         class="form-control" placeholder="پست الکترونیکی">
+                           </div>
+                    </div>   
+                    
+                    <textarea  class="mt-3"
+                    name="" cols="50" rows="10" placeholder="پیام شما" style="text-align: right;padding: 10px;" 
+                    title="پیام خود را در این قسمت وارد کنید"></textarea>
+
+                    <input type="submit" class="mt-3 btn btn-dark" value="ارسال"  
+                    style="width: 400px;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-------------------------modal telefon---------------------------------------------->
+
+
+<div class="p-2 mt-3  col">  
+<a href="#"> <img src="img/ma.png" class="avatar" alt="..." style="width:70px; height: 70px;"></a> </div>
+<div class="p-2 mt-3 col">   
+<a href="#"><img src="img/email.png" class="avatar" alt="..." style="width: 70px; height:70px;"></a> </div>
+<div class="p-2 mt-3 col" > 
+<a href="#"> <img class="avatar" src="img/in.png" alt="..." style="width: 70px; height:70px;"></a> </div>
+              
+        </div>
+    </div>
+        <a name="ar"></a>
+        
+        
+    
+        </div>
+
+  
+<!---------------------------------------عضویت در خبرنامه---------------------->             
+<div style="background-color: rgba(239, 222, 222, 0.74);
+text-align: center;
+height:110px;
+margin-top: 20px;
+color: rgb(0, 0, 0);">
+ 
+<div>
+<form >
+<input type="email" placeholder="ایمیل"
+style="height:40px;width:200px;margin-top:10px;
+border-radius: 10px;
+padding: 10px;color: rgb(0, 0, 0);">
+
+<input class="btn btn-danger"
+id="button" type="submit" value="عضویت در خبرنامه" style="width: 90px;
+font-size:x-small;">
+</form>
+</div>
+<div style="margin-top:5px;" >
+شنبه تا پنجشنبه ساعت9الی 19
+/ واتس آپ <a href="#" style="color:rgb(4, 4, 4);">09021457856</a>
+/ تماس <a href="#" style="color:rgb(1, 1, 1);">09054757856</a>
+</div>     
+</div>
+
+
+  <div  style="text-align: center; 
+  margin-top: 20px;
+  background-color: rgba(239, 222, 222, 0.74);">
+  
+    <div >
+    <a href="#"><img src="img/78.webp "
+    style="width:30;height:30px;cursor:no-drop;margin-top:15px;"></a>
+</div>
+
+<p>
+استفاده از مطالب گل فروشی اینترنتی گل ستان تنها برای مقاصد غیر تجاری و با ذکر منبع
+بلامانع است. کلیه حقوق این سایت متعلق به
+ <br>
+شرکت ارزش آفرینان فردای روشن (گل فروشی آنلاین گل ستان) است
+</p>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+
+  @font-face{font-family:'Vazir-Medium-FD-WOL';
+    src:url('fon/farsi/Vazir-Medium-FD-WOL.eot');
+    src: url('fon/farsi/Vazir-Medium-FD-WOL.ttf');
+    src: url('fon/farsi/Vazir-Medium-FD-WOL.woff');}
+
+    .sefar:hover{border: 1px solid red; }
+    .br:hover{
+     -webkit-transform: scale(1.03,1.03);
+     -moz-transform: scale(1.03,1.03);
+     -o-transform: scale(1.03,1.03);
+     -webkit-transition-duration:0.5s;
+     -moz-transition-duration:0.5;
+     -o-transition-duration: 0.5s;}
+
+    
+
+     .mar{margin-top:10px ;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttonmen:hover{
+-webkit-transform: rotate(5deg);
+-o-transform: rotate(5deg);
+-moz-transform: rotate(5deg);
+}
+
+
+
+body{
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    -moz-transition-property: all;
+
+    -webkit-transition-duration:2s;
+    -o-transition-property: 2s;
+    -moz-transition-property: 2s;
+
+
+    -webkit-animation: 'my' 1s;
+    -o-animation: 'my' 1s;
+    -moz-animation: 'my' 1s;
+}
+
+
+@-webkit-keyframes my{
+
+    0%{
+        opacity: 0.1;
+    }
+
+      10%{
+        opacity: 0.2;
+    }
+}
+
+
+
+
+.onvan::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .onvan:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .onvan::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(252, 182, 169);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+ .onvan {
+    position: relative;
+    
+  }
+  
+ 
+  
+  body {
+   
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+   
+  }
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .bor {
+    border-radius: 10px;
+    --g: 4px;     /* the gap */
+    --b: 10px;    /* border thickness*/
+    --c: #e79f79; /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .8s;
+  }
+  .bor:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    gap: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
